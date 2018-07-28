@@ -15,9 +15,15 @@
 * View all decisions by circle
 * Decisions with review by date which have not been checked as 'reviewed or fully incorporated' are displayed on home page
 * User can click on Decision archives, and be directed there.
-* On archives page, users can search (for keywords???) or sort decisions by circle or date made.  
-* Check off decision reviews which have a review_by date
-* Users should be able to 'extend' the review_by date, updating the db.
+* On archives page, users can search (for keywords???) or sort decisions by circle or date made. (might want to conduct research on adding search features to ActiveRecord db's)  
+* Users can choose to update a decision: calling it 'incorporated'. Non-incorporated decisions will be 'New'
+* 'New' decisions will be listed on the home page, listed by descending date and sorted into 2 groups. 1) Decision with a past review_by_date and 2) Decisions with an upcoming review_by_date
+* To each unincorporated decision, users should be able to extend the review by date (Write decision.extend method), or update the decision to 'incorporated'
+* 'Incorporated' won't have a date associated - ie. it won't matter when a decision was incorporated. It will be subjective to the user whether or not the decision is fully adopted and thus incorporated into the community. If the decision is 'incorporated,' the only date visible on the page will be the date decided
+* On index/home page, users have the option to add a decision, and will see all decisions which have not been fully incorporated
+* There will be some simple way for the site to distinguish an admin user from a regular viewer user.
+* Later, add more complex security/authentication
+
 
 ## License
 
