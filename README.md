@@ -1,5 +1,9 @@
 # Decision Log For Hart's Mill Ecovillage
 
+#### A way to log decisions made across multiple Hart's Mill circles.
+
+#### Rita Bennett-Chew
+
 ## DB Schema
 * A decision is made by a circle, a circle can make many decisions
 * In ActiveRecord terms, a decision belongs to a circle, and a circle has many decisions
@@ -14,3 +18,9 @@
 * On archives page, users can search (for keywords???) or sort decisions by circle or date made.  
 * Check off decision reviews which have a review_by date
 * Users should be able to 'extend' the review_by date, updating the db.
+
+## License
+
+This software is licensed under the MIT license.
+
+Copyright (c)2018 **Rita Bennett-Chew**
