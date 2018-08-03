@@ -1,0 +1,75 @@
+<h1>Log a New Decision</h1>
+
+<form action="/success" method="post">
+
+  <div class="form-group">
+    <label for="decision_name">
+      <h4>Name</h4>
+      <h5>Enter a name for this decision.</h5>
+    </label>
+    <input type="text" id="decision_name" name="decision_name">
+  </div>
+
+  <div class="form-group">
+    <label for="decision_date">
+      <h4>Date Decided</h4>
+      <h5>When was this decision first decided?</h5>
+    </label>
+    <input type="date" id="decision_date" name="decision_date">
+  </div>
+
+  <div class="form-group">
+    <label for="description">
+      <h4>Description</h4>
+      <h5>Enter the details of this decision.</h5>
+    </label>
+    <br>
+    <textarea id="description" name="description" rows="8" cols="80"></textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="review_by">
+      <h4>Review By Date</h4>
+      <h5>When will this decision need to be reviewed?</h5>
+    </label>
+    <input type="date" id="review_by_date" name="review_by_date">
+  </div>
+
+  <div class="form-group">
+      <h4>Supporting Document #1</h4>
+    <label for="supp_doc_one_type">
+      <h5>Choose the type of document</h5>
+    </label>
+    <select id="supp_doc_one_type" name="supp_doc_one_type">
+      <option value="" selected disabled>Choose one</option>
+      <option value="minutes">Minutes</option>
+      <option value="proposal">Proposal</option>
+      <option value="misc">Other</option>
+    </select>
+
+    <label for="supp_doc_one_link">
+      <h5>Add the link</h5>
+    </label>
+    <input id="supp_doc_one_link" type="text" name="supp_doc_one_link">
+  </div>
+
+  <div class="form-group">
+    <h4>Supporting Document #2 (Optional)</h4>
+    <label for="supp_doc_two_type">
+      <h5>Choose the type of document</h5>
+    </label>
+    <select id="supp_doc_two_type" name="supp_doc_two_type">
+      <option value="" selected disabled>Choose one</option>
+      <option value="minutes">Minutes</option>
+      <option value="proposal">Proposal</option>
+      <option value="misc">Other</option>
+    </select>
+
+    <label for="supp_doc_two_link">
+      <h5>Add the link</h5>
+    </label>
+    <input id="supp_doc_two_link" type="text" name="supp_doc_two_link">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
