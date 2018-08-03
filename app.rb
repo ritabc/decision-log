@@ -17,5 +17,5 @@ end
 post('/success') do
   @name = params["decision_name"]
   @decision = Decision.create({:decision_name => @name, :decision_date =>  params["decision_date"], :description => params["description"], :review_by_date =>  params["review_by_date"], :supp_doc_one_type => params["supp_doc_one_type"], :supp_doc_one_link =>  params["supp_doc_one_link"], :supp_doc_two_type =>  params["supp_doc_two_type"], :supp_doc_two_link => params["supp_doc_two_link"]})
-
+  erb(:success)
 end

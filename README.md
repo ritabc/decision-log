@@ -1,6 +1,6 @@
 # Decision Log For Hart's Mill Ecovillage
 
-#### A way to log decisions made across multiple Hart's Mill circles.
+#### A way to log decisions made across multiple Hart's Mill circles, with capabilities for password-verified logins and different account levels
 
 #### Rita Bennett-Chew
 
