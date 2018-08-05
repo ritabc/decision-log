@@ -28,7 +28,7 @@
 * Different roles:
   - Viewer: Can view decisions and search them
   - Admin: Above, plus can add and decisions
-  - Superadmin: Above, plus can add circles and admins and edit Decisions (including marking them as incorporated or renewing the review_by_date)
+  - Superadmin: Above, plus can add circles and admins (by sending the admin the link to sign up? or some other way?) and edit Decisions (including marking them as incorporated or renewing the review_by_date)
 * Decision Log app with Group Users (HMecoV being a Group, with multiple users)
 ## License
 
