@@ -3,11 +3,19 @@ Bundler.require(:default)
 Dir[File.dirname(__FILE__) + '/lib/*.rb'].each { |file| require file }
 require("pry")
 require("bcrypt")
+enable :sessions
+
+def logged_in?
+  !session[:user_id].nil?
+end
 
 get ('/') do
   today = Date.today
   @unincorporated_decisions_past = Decision.where("incorporated = false AND review_by_date < ?", today).order(:review_by_date)
   @unincorporated_decisions_future = Decision.where("incorporated = false AND review_by_date > ?", today).order(:review_by_date)
+  if logged_in?
+    @user = User.find_by(id: session[:user_id])
+  end
   erb(:index)
 end
 
@@ -30,7 +38,7 @@ post ('/signup') do
 end
 
 get('/add') do
-  if session[:user_id].empty?
+  if !logged_in?
     redirect("/login")
   else
     erb(:add_decision)

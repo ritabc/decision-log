@@ -1,3 +1,7 @@
+## Next Steps
+* Show different views for logged in/not
+* Add partial for signup/login/'Welcome, username'
+
 * permissions column
 * to Google: - 'forgot my password'
 * to Google: - 'reset my password'
