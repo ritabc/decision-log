@@ -23,6 +23,7 @@ post ('/signup') do
   user = User.new(:username => params[:username_signup], :password => params[:password_signup])
   if user.save
     session[:user_id] = user.id
+    redirect("/")
   else
     redirect("/failure")
   end
