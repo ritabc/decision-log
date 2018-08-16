@@ -57,3 +57,11 @@ get("/logout") do
   session.clear
   redirect("/")
 end
+
+get ("/failure") do
+  erb(:login_failure)
+end
+
+get ("/back") do
+  redirect("/")
+end
